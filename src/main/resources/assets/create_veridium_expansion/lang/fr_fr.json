@@ -1,0 +1,22 @@
+{
+  "item.create_veridium_expansion.veridium_alloy_plate_raw": "Plaque de Veridium incomplète",
+  "item.create_veridium_expansion.veridium_alloy_plate": "Plaque d’alliage de Veridium",
+  "item.create_veridium_expansion.veridium_smithing_template": "Modèle de forge : Amélioration Veridium",
+
+  "item.create_veridium_expansion.veridium_helmet": "Casque en Veridium",
+  "item.create_veridium_expansion.veridium_chestplate": "Plastron en Veridium",
+  "item.create_veridium_expansion.veridium_leggings": "Jambières en Veridium",
+  "item.create_veridium_expansion.veridium_boots": "Bottes en Veridium",
+
+  "item.create_veridium_expansion.veridium_sword": "Épée en Veridium",
+  "item.create_veridium_expansion.veridium_pickaxe": "Pioche en Veridium",
+  "item.create_veridium_expansion.veridium_axe": "Hache en Veridium",
+  "item.create_veridium_expansion.veridium_shovel": "Pelle en Veridium",
+  "item.create_veridium_expansion.veridium_hoe": "Houe en Veridium",
+
+  "item.create_veridium_expansion.music_disc_odst": "Disque — ODST",
+  "item.create_veridium_expansion.music_disc_odst.desc": "Souvenez-vous de Reach",
+  "record.odst": "ODST - Rain",
+
+  "itemGroup.create_veridium_expansion.main": "Create : Extension Veridium"
+}

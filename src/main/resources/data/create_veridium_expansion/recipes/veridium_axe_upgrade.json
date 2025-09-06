@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "create_veridium_expansion:veridium_smithing_template"
+  },
+  "base": {
+    "item": "minecraft:netherite_axe"
+  },
+  "addition": {
+    "item": "create_veridium_expansion:veridium_alloy_plate"
+  },
+  "result": {
+    "item": "create_veridium_expansion:veridium_axe"
+  }
+}

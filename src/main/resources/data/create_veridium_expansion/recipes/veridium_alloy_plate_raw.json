@@ -1,0 +1,11 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    { "item": "create:sturdy_sheet" },
+    { "item": "create:veridium" }
+  ],
+  "results": [
+    { "item": "create_veridium_expansion:veridium_alloy_plate_raw", "count": 1 }
+  ],
+  "heatRequirement": "superheated"
+}

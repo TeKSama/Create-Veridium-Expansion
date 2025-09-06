@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "DND",
+    "DBD",
+    "DPD"
+  ],
+  "key": {
+    "D": { "item": "minecraft:diamond" },
+    "B": { "item": "create:veridium" },
+    "N": { "item": "minecraft:netherite_upgrade_smithing_template" },
+    "P": { "item": "minecraft:end_stone" }
+  },
+  "result": {
+    "item": "create_veridium_expansion:veridium_smithing_template"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "create_veridium_expansion:item/veridium_pickaxe"
+  }
+}

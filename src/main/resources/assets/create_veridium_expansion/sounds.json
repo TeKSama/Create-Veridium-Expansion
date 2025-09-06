@@ -1,0 +1,8 @@
+{
+  "odst": {
+    "subtitle": "record.odst",
+    "sounds": [
+      { "name": "create_veridium_expansion:music_disc/odst", "stream": true }
+    ]
+  }
+}

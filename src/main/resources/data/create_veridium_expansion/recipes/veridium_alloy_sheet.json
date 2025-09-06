@@ -1,0 +1,41 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": { "item": "create_veridium_expansion:veridium_alloy_plate_raw" },
+  "transitionalItem": { "item": "create_veridium_expansion:veridium_alloy_plate_raw" },
+  "sequence": [
+    {
+      "type": "create:filling",
+      "ingredients": [
+        { "item": "create_veridium_expansion:veridium_alloy_plate_raw" },
+        { "fluid": "minecraft:lava", "amount": 250 }
+      ],
+      "results": [
+        { "item": "create_veridium_expansion:veridium_alloy_plate_raw" }
+      ]
+    },
+    {
+      "type": "create:filling",
+      "ingredients": [
+        { "item": "create_veridium_expansion:veridium_alloy_plate_raw" },
+        { "fluid": "minecraft:water", "amount": 250 }
+      ],
+      "results": [
+        { "item": "create_veridium_expansion:veridium_alloy_plate_raw" }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [ { "item": "create_veridium_expansion:veridium_alloy_plate_raw" } ],
+      "results": [ { "item": "create_veridium_expansion:veridium_alloy_plate_raw" } ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [ { "item": "create_veridium_expansion:veridium_alloy_plate_raw" } ],
+      "results": [ { "item": "create_veridium_expansion:veridium_alloy_plate_raw" } ]
+    }
+  ],
+  "results": [
+    { "item": "create_veridium_expansion:veridium_alloy_plate", "count": 1 }
+  ],
+  "loops": 1
+}

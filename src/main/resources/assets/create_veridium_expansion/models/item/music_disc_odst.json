@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "create_veridium_expansion:item/music_disc_odst"
+  }
+}

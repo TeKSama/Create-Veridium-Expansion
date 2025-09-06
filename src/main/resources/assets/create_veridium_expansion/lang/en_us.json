@@ -1,0 +1,22 @@
+{
+  "item.create_veridium_expansion.veridium_alloy_plate_raw": "Unprocessed Veridium Alloy Sheet",
+  "item.create_veridium_expansion.veridium_alloy_plate": "Veridium Alloy Sheet",
+  "item.create_veridium_expansion.veridium_smithing_template": "Smithing Template: Veridium Upgrade",
+
+  "item.create_veridium_expansion.veridium_helmet": "Veridium Helmet",
+  "item.create_veridium_expansion.veridium_chestplate": "Veridium Chestplate",
+  "item.create_veridium_expansion.veridium_leggings": "Veridium Leggings",
+  "item.create_veridium_expansion.veridium_boots": "Veridium Boots",
+
+  "item.create_veridium_expansion.veridium_sword": "Veridium Sword",
+  "item.create_veridium_expansion.veridium_pickaxe": "Veridium Pickaxe",
+  "item.create_veridium_expansion.veridium_axe": "Veridium Axe",
+  "item.create_veridium_expansion.veridium_shovel": "Veridium Shovel",
+  "item.create_veridium_expansion.veridium_hoe": "Veridium Hoe",
+
+  "item.create_veridium_expansion.music_disc_odst": "Music Disc — ODST",
+  "item.create_veridium_expansion.music_disc_odst.desc": "Remember Reach",
+  "record.odst": "ODST - Rain",
+
+  "itemGroup.create_veridium_expansion.main": "Create: Veridium Expansion"
+}
