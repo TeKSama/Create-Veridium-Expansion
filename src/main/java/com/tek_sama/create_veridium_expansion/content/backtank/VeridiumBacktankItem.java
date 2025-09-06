@@ -10,7 +10,12 @@ import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.item.*;
+import net.minecraft.world.item.ArmorItem;
+import net.minecraft.world.item.ArmorMaterial;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.TooltipFlag;
+import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.level.Level;
 
 import java.util.List;
@@ -19,13 +24,14 @@ public class VeridiumBacktankItem extends ArmorItem {
     // tweak these to taste
     public static final int MAX_AIR = 6000; // ticks of air (~5min)
     public static final int TRANSFER_PER_TICK = 4;
+    public static final int BAR_COLOR = 0xEFEFEF;
 
     public VeridiumBacktankItem(ArmorMaterial material, Properties props) {
         super(material, Type.CHESTPLATE, props);
     }
 
     @Override
-    public void appendHoverText(ItemStack stack, TooltipContext ctx, List<Component> tooltip, TooltipFlag flag) {
+    public void appendHoverText(ItemStack stack, Item.TooltipContext ctx, List<Component> tooltip, TooltipFlag flag) {
         int air = VeridiumBacktankUtil.getAir(stack);
         tooltip.add(Component.translatable("tooltip.create_veridium_expansion.backtank.air",
                 air, MAX_AIR).withStyle(ChatFormatting.AQUA));
@@ -75,5 +81,21 @@ public class VeridiumBacktankItem extends ArmorItem {
             return InteractionResultHolder.sidedSuccess(stack, level.isClientSide);
         }
         return super.use(level, player, hand);
+    }
+
+    @Override
+    public boolean isBarVisible(ItemStack stack) {
+        return true;
+    }
+
+    @Override
+    public int getBarWidth(ItemStack stack) {
+        float remaining = VeridiumBacktankUtil.getAir(stack) / (float) MAX_AIR;
+        return Math.round(13.0F * remaining);
+    }
+
+    @Override
+    public int getBarColor(ItemStack stack) {
+        return BAR_COLOR;
     }
 }
