@@ -48,9 +48,9 @@ minecraft {
 
 repositories {
     // Create & Registrate
-    maven {
-        url = "https://maven.tterrag.com/"
-    }
+    maven { url = "https://maven.tterrag.com/" }
+    maven { url = "https://maven.createmod.net" }
+    maven { url = "https://modmaven.dev" }
     mavenCentral()
 }
 
