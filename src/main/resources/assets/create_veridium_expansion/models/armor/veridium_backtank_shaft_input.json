@@ -1,8 +1,8 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "create_veridium_expansion:block/veridium_backtank.png",
-		"particle": "create:block/netherite_backtank"
+		"0": "create_veridium_expansion:block/veridium_backtank",
+		"particle": "create_veridium_expansion:block/veridium_backtank"
 	},
 	"elements": [
 		{
@@ -29,9 +29,10 @@
 		}
 	],
 	"groups": [
-		{
-			"name": "Axle",
-			"origin": [8, 8, 8],
-			"children": []
-		}, 0, 1]
+                {
+                        "name": "Axle",
+                        "origin": [8, 8, 8],
+                        "children": []
+                }
+        ]
 }
