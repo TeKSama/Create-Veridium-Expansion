@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": { "model": "create_veridium_expansion:block/veridium_backtank" }
+  }
+}
