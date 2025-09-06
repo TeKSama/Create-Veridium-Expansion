@@ -65,7 +65,7 @@ dependencies {
     runtimeOnly fg.deobf("com.simibubi.create:create-${minecraft_version}:${create_version}")
 
     // Registrate
-    implementation fg.deobf("com.tterrag.registrate:Registrate:${registrate_version}")
+    implementation "com.tterrag.registrate:Registrate:${registrate_version}"
 }
 
 tasks.named('processResources', ProcessResources).configure {
