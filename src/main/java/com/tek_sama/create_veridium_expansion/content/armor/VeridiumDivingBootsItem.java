@@ -1,17 +1,42 @@
 package com.tek_sama.create_veridium_expansion.content.armor;
 
+import com.tek_sama.create_veridium_expansion.CreateVeridiumExpansion;
+import net.minecraft.ChatFormatting;
+import net.minecraft.client.gui.screens.Screen;
+import net.minecraft.network.chat.Component;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.Pose;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.phys.Vec3;
+
+import java.util.List;
 
 public class VeridiumDivingBootsItem extends ArmorItem {
     public VeridiumDivingBootsItem(ArmorMaterial material, Type type, Item.Properties props) {
         super(material, type, props);
+    }
+
+    @Override
+    public void appendHoverText(ItemStack stack, Level level, List<Component> tooltip, TooltipFlag flag) {
+        if (Screen.hasShiftDown()) {
+            tooltip.add(Component.translatable("tooltip.create_veridium_expansion.diving_boots.desc")
+                    .withStyle(ChatFormatting.GRAY));
+        } else {
+            tooltip.add(Component.translatable("tooltip.create_veridium_expansion.hold_shift")
+                    .withStyle(ChatFormatting.DARK_GRAY));
+        }
+    }
+
+    @Override
+    public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
+        return CreateVeridiumExpansion.MOD_ID + ":textures/models/armor/veridium_diving_layer_1.png";
     }
 
     @Override

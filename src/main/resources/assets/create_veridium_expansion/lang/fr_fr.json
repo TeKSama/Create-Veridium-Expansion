@@ -8,6 +8,10 @@
   "item.create_veridium_expansion.veridium_leggings": "Jambières en Veridium",
   "item.create_veridium_expansion.veridium_boots": "Bottes en Veridium",
 
+  "item.create_veridium_expansion.veridium_backtank": "Backtank en Veridium",
+  "item.create_veridium_expansion.veridium_diving_helmet": "Casque de plongée en Veridium",
+  "item.create_veridium_expansion.veridium_diving_boots": "Bottes de plongée en Veridium",
+
   "item.create_veridium_expansion.veridium_sword": "Épée en Veridium",
   "item.create_veridium_expansion.veridium_pickaxe": "Pioche en Veridium",
   "item.create_veridium_expansion.veridium_axe": "Hache en Veridium",
@@ -17,6 +21,13 @@
   "item.create_veridium_expansion.music_disc_odst": "Disque — ODST",
   "item.create_veridium_expansion.music_disc_odst.desc": "Souvenez-vous de Reach",
   "record.odst": "ODST - Rain",
+
+  "tooltip.create_veridium_expansion.backtank.air": "Air : %s / %s",
+  "tooltip.create_veridium_expansion.backtank.desc.line1": "Recharge avec un arbre rotatif au-dessus.",
+  "tooltip.create_veridium_expansion.backtank.desc.line2": "Fournit de l'air à l'équipement de plongée.",
+  "tooltip.create_veridium_expansion.diving_helmet.desc": "Permet de respirer sous l'eau avec un backtank.",
+  "tooltip.create_veridium_expansion.diving_boots.desc": "Améliore les déplacements dans l'eau.",
+  "tooltip.create_veridium_expansion.hold_shift": "Maintenez Maj pour info",
 
   "itemGroup.create_veridium_expansion.main": "Create : Extension Veridium"
 }

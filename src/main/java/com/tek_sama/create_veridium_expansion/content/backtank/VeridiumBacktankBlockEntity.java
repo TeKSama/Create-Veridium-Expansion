@@ -4,8 +4,11 @@ package com.tek_sama.create_veridium_expansion.content.backtank;
 import com.tek_sama.create_veridium_expansion.registry.CVEBlockEntities;
 import net.minecraft.core.BlockPos;
 import net.minecraft.nbt.CompoundTag;
+import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
+
+import com.simibubi.create.content.kinetics.base.KineticBlockEntity;
 
 public class VeridiumBacktankBlockEntity extends BlockEntity {
     private int air;
@@ -27,5 +30,15 @@ public class VeridiumBacktankBlockEntity extends BlockEntity {
     public void load(CompoundTag tag) {
         super.load(tag);
         air = tag.getInt("Air");
+    }
+
+    public static void tick(Level level, BlockPos pos, BlockState state, VeridiumBacktankBlockEntity be) {
+        if (level.isClientSide)
+            return;
+
+        BlockEntity above = level.getBlockEntity(pos.above());
+        if (above instanceof KineticBlockEntity kbe && kbe.getSpeed() != 0) {
+            be.setAir(be.getAir() + VeridiumBacktankItem.TRANSFER_PER_TICK);
+        }
     }
 }

@@ -1,6 +1,7 @@
 // src/main/java/com/tek_sama/create_veridium_expansion/content/backtank/VeridiumBacktankItem.java
 package com.tek_sama.create_veridium_expansion.content.backtank;
 
+import com.tek_sama.create_veridium_expansion.CreateVeridiumExpansion;
 import com.tek_sama.create_veridium_expansion.registry.CVEBlocks;
 import net.minecraft.ChatFormatting;
 import net.minecraft.client.gui.screens.Screen;
@@ -9,6 +10,7 @@ import net.minecraft.world.InteractionResult;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.entity.EquipmentSlot;
+import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.ArmorMaterial;
@@ -28,6 +30,13 @@ public class VeridiumBacktankItem extends ArmorItem {
 
     public VeridiumBacktankItem(ArmorMaterial material, Properties props) {
         super(material, Type.CHESTPLATE, props);
+    }
+
+    @Override
+    public ItemStack getDefaultInstance() {
+        ItemStack stack = super.getDefaultInstance();
+        VeridiumBacktankUtil.setAir(stack, MAX_AIR);
+        return stack;
     }
 
     @Override
@@ -97,5 +106,10 @@ public class VeridiumBacktankItem extends ArmorItem {
     @Override
     public int getBarColor(ItemStack stack) {
         return BAR_COLOR;
+    }
+
+    @Override
+    public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
+        return CreateVeridiumExpansion.MOD_ID + ":textures/models/armor/veridium_diving_layer_1.png";
     }
 }

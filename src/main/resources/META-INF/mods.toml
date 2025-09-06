@@ -4,7 +4,7 @@ license="All Rights Reserved"
 
 [[mods]]
 modId="create_veridium_expansion"
-version="0.9"
+version="0.9.1"
 displayName="Create: Veridium Expansion"
 authors="TeK Sama"
 description='''Adds Veridium alloy tools, armors, jetpacks and weapon upgrades for Create and CSA.'''
