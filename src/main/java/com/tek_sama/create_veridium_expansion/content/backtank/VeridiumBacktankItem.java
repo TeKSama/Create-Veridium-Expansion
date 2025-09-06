@@ -31,6 +31,13 @@ public class VeridiumBacktankItem extends ArmorItem {
     }
 
     @Override
+    public ItemStack getDefaultInstance() {
+        ItemStack stack = super.getDefaultInstance();
+        VeridiumBacktankUtil.setAir(stack, MAX_AIR);
+        return stack;
+    }
+
+    @Override
     public void appendHoverText(ItemStack stack, Level level, List<Component> tooltip, TooltipFlag flag) {
         int air = VeridiumBacktankUtil.getAir(stack);
         tooltip.add(Component.translatable("tooltip.create_veridium_expansion.backtank.air",
