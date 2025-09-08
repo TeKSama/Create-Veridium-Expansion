@@ -57,7 +57,7 @@ repositories {
 dependencies {
     minecraft "net.minecraftforge:forge:${minecraft_version}-${forge_version}"
 
-    // Create (6.x) — slim classifier
+    // Create 0.6.x — slim classifier
     implementation fg.deobf("com.simibubi.create:create-${minecraft_version}:${create_version}:slim") {
         transitive = false
     }
